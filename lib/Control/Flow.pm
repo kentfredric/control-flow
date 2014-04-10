@@ -21,10 +21,22 @@ has _tags => (
   },
 );
 
+
+
+
+
+
+
 sub hook {
   my ($self,$tag,$hook) = @_;
   $self->_set_tag($tag,$hook);
 }
+
+
+
+
+
+
 
 sub divert {
   my ($self, $tag, @arguments) = @_;
@@ -69,6 +81,16 @@ Constructs a flowchart of operations for flowchart-based programming.
     $flow->hook("no", sub { print "No"; });
     $flow->flow(1); # Prints "Yes";
     $flow->flow(0); # Prints "No";
+
+=head1 METHODS
+
+=head2 C<hook>
+
+  $flow->hook( $tag, $hook );
+
+=head2 C<divert>
+
+  $flow->divert( $tag, @arguments );
 
 =head1 WHY?
 
