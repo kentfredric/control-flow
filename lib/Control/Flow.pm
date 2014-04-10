@@ -21,10 +21,22 @@ has _tags => (
   },
 );
 
+=method C<hook>
+
+  $flow->hook( $tag, $hook );
+
+=cut
+
 sub hook {
   my ($self,$tag,$hook) = @_;
   $self->_set_tag($tag,$hook);
 }
+
+=method C<divert>
+
+  $flow->divert( $tag, @arguments );
+
+=cut
 
 sub divert {
   my ($self, $tag, @arguments) = @_;

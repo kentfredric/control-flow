@@ -27,6 +27,16 @@ Constructs a flowchart of operations for flowchart-based programming.
     $flow->flow(1); # Prints "Yes";
     $flow->flow(0); # Prints "No";
 
+# METHODS
+
+## `hook`
+
+    $flow->hook( $tag, $hook );
+
+## `divert`
+
+    $flow->divert( $tag, @arguments );
+
 # WHY?
 
 Flowchart based programming is starting to get interesting. This modules
