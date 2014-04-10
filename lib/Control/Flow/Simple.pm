@@ -1,5 +1,7 @@
 package Control::Flow::Simple;
 $Control::Flow::Simple::VERSION = '0.001000';
+# ABSTRACT: A simple way of making flow objects
+
 use Moose;
 
 has flow => (
@@ -20,7 +22,7 @@ __END__
 
 =head1 NAME
 
-Control::Flow::Simple
+Control::Flow::Simple - A simple way of making flow objects
 
 =head1 VERSION
 
@@ -37,10 +39,6 @@ version 0.001000
     $flow->hook("no", sub { print "no"; });
     $flow->flow(1); # prints "yes"
     $flow->flow(0); # prints "no"
-
-=head1 NAME
-
-Control::Flow::Simple - A simple way of making flow objects
 
 =head1 AUTHORS
 
