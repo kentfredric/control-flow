@@ -1,13 +1,14 @@
 package Control::Flow::Simple;
 $Control::Flow::Simple::VERSION = '0.001000';
 use Moose;
-with 'Control::Flow';
 
 has flow => (
   isa => 'CodeRef',
   is => 'ro',
   required => 1,
 );
+
+with 'Control::Flow';
 
 __PACKAGE__->meta->make_immutable;
 
@@ -36,8 +37,6 @@ version 0.001000
     $flow->hook("no", sub { print "no"; });
     $flow->flow(1); # prints "yes"
     $flow->flow(0); # prints "no"
-
-=cut   
 
 =head1 NAME
 
