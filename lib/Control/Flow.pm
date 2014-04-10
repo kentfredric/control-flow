@@ -29,6 +29,8 @@ sub divert {
   }
 }
 
+1;
+
 =pod
 
 =encoding UTF-8
