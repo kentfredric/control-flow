@@ -2,6 +2,8 @@ package Control::Flow;
 
 # ABSTRACT: Flowchart-based programming
 
+# AUTHORITY
+
 use Moose::Role;
 use Set::Scalar;
 

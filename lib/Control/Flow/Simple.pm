@@ -2,6 +2,8 @@ package Control::Flow::Simple;
 
 # ABSTRACT: A simple way of making flow objects
 
+# AUTHORITY
+
 use Moose;
 
 has flow => (
