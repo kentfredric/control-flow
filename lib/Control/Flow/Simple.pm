@@ -1,13 +1,14 @@
 package Control::Flow::Simple;
 
 use Moose;
-with 'Control::Flow';
 
 has flow => (
   isa => 'CodeRef',
   is => 'ro',
   required => 1,
 );
+
+with 'Control::Flow';
 
 __PACKAGE__->meta->make_immutable;
 __END__
