@@ -3,7 +3,7 @@ package Control::Flow;
 use Moose::Role;
 use Set::Scalar;
 
-require 'flow';
+requires 'flow';
 
 has _tags => (
   isa => 'HashRef',
@@ -48,7 +48,7 @@ Constructs a flowchart of operations for flowchart-based programming.
 
     package Acme::Flowchart::Conditional;
     use Moose;
-    with 'Control::Flow';
+        with 'Control::Flow';
     
     sub flow {
       my ($self,$value) = @_;
