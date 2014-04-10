@@ -1,5 +1,7 @@
 package Control::Flow::Simple;
 
+# ABSTRACT: A simple way of making flow objects
+
 use Moose;
 
 has flow => (
@@ -12,10 +14,6 @@ with 'Control::Flow';
 
 __PACKAGE__->meta->make_immutable;
 __END__
-=head1 NAME
-
-Control::Flow::Simple - A simple way of making flow objects
-
 =head1 SYNOPSIS
 
     use Control::Flow::Simple;
