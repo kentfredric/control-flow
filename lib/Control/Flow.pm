@@ -56,14 +56,14 @@ Constructs a flowchart of operations for flowchart-based programming.
     package Acme::Flowchart::Conditional;
     use Moose;
         with 'Control::Flow';
-    
+
     sub flow {
       my ($self,$value) = @_;
       $self->divert( $value ? "yes" : "no" );
     }
 
     package main;
-    
+
     my $flow = Acme::Flowchart::Conditional->new;
     $flow->hook("yes", sub { print "Yes"; });
     $flow->hook("no", sub { print "No"; });
