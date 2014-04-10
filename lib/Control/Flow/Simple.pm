@@ -30,4 +30,4 @@ __END__
     $flow->flow(1); # prints "yes"
     $flow->flow(0); # prints "no"
 
-=cut   
+=cut
