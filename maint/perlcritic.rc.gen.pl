@@ -28,6 +28,7 @@ for my $wordlist (@stopwords) {
 $bundle->remove_policy('CodeLayout::ProhibitParensWithBuiltins');
 $bundle->remove_policy('CodeLayout::RequireUseUTF8');
 $bundle->remove_policy('Compatibility::PerlMinimumVersionAndWhy');
+$bundle->remove_policy('Documentation::RequirePodLinksIncludeText');
 $bundle->remove_policy('ErrorHandling::RequireCarping');
 $bundle->remove_policy('ErrorHandling::RequireUseOfExceptions');
 $bundle->remove_policy('Modules::RequirePerlVersion');
