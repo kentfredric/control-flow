@@ -12,7 +12,7 @@ has _tags => (
   traits => ['Hash'],
   handles => {
     _set_tag => 'set',
-    _get_tag => 'get'
+    _get_tag => 'get',
     _tag_keys => 'keys',
   },
 );
