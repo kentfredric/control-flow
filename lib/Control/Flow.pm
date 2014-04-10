@@ -2,6 +2,8 @@ package Control::Flow;
 $Control::Flow::VERSION = '0.001000';
 # ABSTRACT: Flowchart-based programming
 
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose::Role;
 use Set::Scalar;
 

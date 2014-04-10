@@ -2,6 +2,8 @@ package Control::Flow::Simple;
 $Control::Flow::Simple::VERSION = '0.001000';
 # ABSTRACT: A simple way of making flow objects
 
+our $AUTHORITY = 'cpan:ELPENGUIN'; # AUTHORITY
+
 use Moose;
 
 has flow => (
