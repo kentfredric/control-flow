@@ -134,9 +134,9 @@ The code is open to the world, and available for you to hack on. Please feel fre
 with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
 from your repository :)
 
-[https://github.com/kentfredric/control-flow](https://github.com/kentfredric/control-flow)
+[https://github.com/jjl/control-flow](https://github.com/jjl/control-flow)
 
-    git clone https://github.com/kentfredric/control-flow.git
+    git clone https://github.com/jjl/control-flow.git
 
 # COPYRIGHT AND LICENSE
 
